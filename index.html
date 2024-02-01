@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="portfolio.js"></script>
+</head>
+
+<body>
+<!--------------------------
+
+    ナヴィ
+
+---------------------------->
+    <nav class="N">
+        <!--ロゴの画像-->
+        <img class="N_img" src="../img/logo.png" alt="ロゴ">
+
+
+        <!--ナヴィアイテム-->
+        <ul class="N_item">
+            <li><a href="#">Tpo</a></li>
+            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#Skill">Skill</a></li>
+            <li><a href="#Works">Works</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+<!--------------------------
+
+    ヘッダー
+
+---------------------------->
+    <header class="H">
+        <div class="context">
+            <h1>Welcome my portfolio</h1>
+        </div>
+
+
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </header>
+
+<!--------------------------
+
+    コンテンツ
+
+---------------------------->
+        <main class="C">
+            <div class="C_profile">
+                <h1 id="Profile">Profile</h1>
+
+
+                <!-----------プロフィール------------->
+                <div class="C_profile_textimg">
+
+
+                    <!--自分の情報-->
+                    <div class="C_profile_text">
+                        <p>Name:　稲田 和哉</p>
+                        <p>Age:　21</p>
+                        <p>Hobby:　掃除、筋トレ、観光</p>
+                        <p>Etc:
+                            <br>
+                            ポートフォリオを見ていただきありがとうございます。<br>
+                            あまり良い出来では無いかもしれませんが、どうぞ最後<br>
+                            まで見ていただければとてもうれしいです。
+                        </p>
+                    </div>
+
+
+                    <!--自分の写真-->
+                    <img class="C_profile_img" src="../img/me.jpg" alt="自分">
+                </div>
+            </div>
+
+
+            <!-----------スキル------------->
+            <div class="C_skill">
+                <h1 id="Skill">Skill</h1>
+                <div class="C_skillcard">
+
+
+                    <!--コーディング-->
+                    <div class="C_skillcard_textimg">
+                        <img class="C_skillcard_img" src="../img/skill/coding_PC.png" alt="コーディングアイコン">
+
+
+                        <div class="C_skillcard_text">
+                            <h2 class="C_skillcard_h2">コーディング</h2>
+                            <p class="C_skillcard_p">
+                                HTML/CSSのマークアップ言語と<br>
+                                JavaScriptのjQueryのフレームワ<br>
+                                ークを使った経験がございます。
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!--デザイン-->
+                    <div class="C_skillcard_textimg">
+                        <img class="C_skillcard_img" src="../img/skill/pencil.png" alt="鉛筆アイコン">
+
+
+                        <div class="C_skillcard_text">
+                            <h2 class="C_skillcard_h2">デザイン</h2>
+                            <p class="C_skillcar_p">
+                                Figmaを使用したデザインをしてい<br>
+                                ます。相手の意図を汲み取り、その<br>
+                                イメージをデザインに起こすことを<br>
+                                意識しています。
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <!--ヒアリング-->
+                    <div class="C_skillcard_textimg">
+                        <img class="C_skillcard_img" src="../img/skill/comment.png" height="64px" width="64px"
+                            alt="コメントアイコン">
+
+
+                        <div class="C_skillcard_text">
+                            <h2 class="C_skillcard_h2">ヒアリング</h2>
+                            <p class="C_skillcard_p">
+                                相手が何を一番求めているものを理<br>
+                                解し、両者が納得のいくところまで<br>
+                                落とし込むように心がけています。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-----------ワーク------------->
+            <div class="works">
+                <h1 id="Works">Works</h1>
+
+
+                <!--フィグマ-->
+                <h2>Figma</h2>
+                <div class="C_works_figma">
+                    <div class="C_works">
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/figma/this_wire_frame.png" alt="このサイトのワイヤーフレーム">
+                            <div class="C_works_text">
+                                <p>
+                                    このポートフォリオのワイヤーフ<br>
+                                    レームです。誰でも見やすいよう白
+                                    と黒ベースで作成しました。
+                                </p>
+                            </div>
+                            <button type="button" class="C_works_button">View</button>
+                        </div>
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/figma/this_wire_frame.png" alt="ポートフォリオ">
+                            <div class="C_works_text">
+                                <p>
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/figma/this_wire_frame.png" alt="ポートフォリオ">
+                            <div class="C_works_text">
+                                <p>
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!--プログラム-->
+                <h2>Program</h2>
+                <div class="C_works_program">
+                    <div class="C_works">
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/coding/bootstrap_program.png" alt="プログラム">
+                            <div class="C_works_text">
+                                <p>
+                                    Bootstrapを使用して作ったポート
+                                    フォリオのサイトになります。CSS
+                                    は使用していません。
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/coding/bootstrap_program.png" alt="プログラム">
+                            <div class="C_works_text">
+                                <p>
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/coding/bootstrap_program.png" alt="プログラム">
+                            <div class="C_works_text">
+                                <p>
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                    テキストテキストテキスト
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!--イラストレーター＆フォトショップ-->
+                <h2>Design</h2>
+                <div class="C_works_design">
+                    <div class="C_works">
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/illustrator_Photoshop/logo.png" alt="ロゴイメージ">
+                            <div class="C_works_text">
+                                <p>
+                                    illustratorを使いアイコンを作成し
+                                    ました。自分の名前のイニシャルを
+                                    取りロゴにしました。
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/illustrator_Photoshop/night_icon.png" alt="夜アイコン">
+                            <div class="C_works_text">
+                                <p>
+                                    illustratorを使い、夜の街をテーマに
+                                    してロゴを作成してみました。
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+
+
+                        <!--各ポートフォリオ-->
+                        <div class="C_works_textimg">
+                            <img class="C_works_img" src="../img/illustrator_Photoshop/imperial_girl.png" alt="帝国少女">
+                            <div class="C_works_text">
+                                <p>
+                                    Photoshop を使い、<a href="https://youtu.be/hUaVxNUCbc4?si=mat83ivGC0qKirvq">帝国少女</a>
+                                    という曲のMVを参考にし作成いたしま
+                                    した。
+                                </p>
+                            </div>
+                            <a href=""><button class="C_works_button" type="button">View</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-----------お問い合わせ------------->
+            <div class="C_contact">
+                <h1 class="C_contact_h1" id="Contact">Contact</h1>
+
+
+                <!--フォーム-->
+                <form action="#" method="post">
+                    <div class="C_contact_name">
+                        <label class="contact_text" for="name">お名前:</label>
+                        <input class="contact_input" type="text" id="name" name="name" required>
+                    </div>
+
+
+                    <div class="C_contact_email">
+                        <label class="contact_text" for="email">メールアドレス:</label>
+                        <input class="contact_input" type="email" id="email" name="email" required>
+                    </div>
+
+
+                    <div class="C_contact_message">
+                        <label class="contact_text" for="message">お問い合わせ内容:</label>
+                        <textarea class="contact_input id=" message" name="message" rows="4" required></textarea>
+                    </div>
+
+
+                    <a href=""><button class="C_works_button" type="button">Send</button></a>
+                </form>
+            </div>
+        </main>
+
+
+<!--------------------------
+
+    フッター
+
+---------------------------->
+        <footer class="F">
+            <div class="F_text">
+                <p>
+                    TEL:123-4567-7890<br>
+                    住所:東京都新宿区高田馬場2丁目11-10
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
