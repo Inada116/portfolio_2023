@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/***************************
+
+    ヘッダー
+
+***************************/
+.context {
+    width: 100%;
+    position: absolute;
+    top:45vh;
+    
+}
+
+.context h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area{
+    background: darkblue;
+    width: 100%;
+    height:75vh;
+}
+
+.circles{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+    }
+
+}
+/***************************
+
+    コンテンツ
+
+***************************/
+/*************共通の処理*************/
+main h1{
+    text-align: left;
+}
+
+main h2{
+    text-align: center;
+}
+
+
+/*ワーク*/
+.C_works{
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 64px;
+    overflow: hidden;
+}
+
+.C_works_textimg{
+    width: 100%;
+    cursor: pointer;
+    border: 0.5px solid #e9eaea;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.C_works_img{
+    width: 2.6em;
+    padding-top: 2em;
+    min-height: 100px;
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.C_works_text{
+    padding: 0.4em 0;
+    position: relative;
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+}
+
+.C_works_button{
+    padding: 10px 32px;
+    border-radius: 50px;
+    margin-bottom: 2em;
+    background: darkblue;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.C_works_button:hover{
+    background: rgb(161, 161, 220);
+    color: darkblue;
+}
+
+
+/*************プロフィール*************/
+.C_profile_textimg{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.C_profile{
+    text-align: center;
+}
+
+.C_profile_text{
+    text-align: left;
+}
+
+.C_profile_img{
+    width: 250px;
+    height: 250px;;
+}
+
+
+/*************スキル*************/
+.C_skill{
+    margin-top: 64px;
+    text-align: center;
+}
+.C_skillcard{
+    display: inline-flex;
+    align-items: flex-start;
+    text-align: center;
+    gap: 64px;
+}
+
+
+/*************ワーク*************/
+.C_works_figma{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.C_works_program{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.C_works_design{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+/*************お問い合わせ*************/
+form{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+input{
+    width: 500px;
+}
+
+textarea{
+    width: 500px;
+    height: 300px;
+}
+
+.contact_text{
+    display: flex;
+
+}
+
+.contact_input{
+    display: flex;
+    width: 0 em;
+}
+
+.C_contact_name{
+    margin-bottom: 40px;
+}
+
+.C_contact_email{
+    margin-bottom: 40px;
+}
+
+.C_contact_message{
+    margin-bottom: 40px;
+
+}
